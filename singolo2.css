@@ -1,0 +1,76 @@
+﻿@font-face {
+    font-family: "Lato-Black";
+    src: url("./assets/fonts/Lato-Black.woff") format("woff"), url("./assets/fonts/Lato-Black.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato-Light";
+    src: url("./assets/fonts/Lato-Light.woff") format("woff"), url("./assets/fonts/Lato-Light.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 1020px;
+    margin: auto;
+}
+
+.portfolio,
+.about {
+    position: relative;
+    padding: 60px 40px 6px;
+}
+
+.portfolio {
+    background-color: #2d303a;
+    height: 870px;
+}
+
+.portfolio:after,
+.about:after {
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 100%;
+    background-color: aquamarine;
+    bottom: 0;
+    left: 0;
+}
+
+.portfolio:after {
+    background-color: #323746;
+}    
+
+.portfolio-title,
+.about-title {
+    font-family: "Lato-Black", Arial, sans-serif;
+    font-size: 30px;
+    color: #666d89;
+}
+
+.portfolio-description,
+.about-description {
+    font-family: "Lato-Light", Arial, sans-serif;
+    font-size: 18px;
+    color: #767e9e;
+    margin-top: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.about {
+    background-color: #f2f2f2;
+    height: 728px;
+}
+
+.about:after {
+    background-color: #ffffff;
+}
