@@ -12,6 +12,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("./assets/fonts/Lato-Regular.woff") format("woff"), url("./assets/fonts/Lato-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -61,9 +68,32 @@
     font-family: "Lato-Light", Arial, sans-serif;
     font-size: 18px;
     color: #767e9e;
-    margin-top: 20px;
-    line-height: 1.6;
+    margin-top: 18px;
+    line-height: 1.7;
     text-align: justify;
+}
+
+.button {
+    font-family: "Lato-Regular", Arial, sans-serif;
+    font-size: 12px;
+    background-color: inherit;
+    border: 1px solid #666d89;
+    border-radius: 5px;
+    color: #767e9e;
+    padding: 5px 7px;
+    text-align: center;
+    line-height: 10px;
+    margin-right: 4.5px;
+    cursor: pointer;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+.button:hover,
+.button.active {
+    border-color: #ffffff;
+    color:#ffffff;
 }
 
 .about {
@@ -74,3 +104,93 @@
 .about:after {
     background-color: #ffffff;
 }
+
+.about-container {
+    position: relative;
+    margin-top: 43px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-person:nth-child(2) {
+    margin-left: 19px;
+}
+
+.about-person:last-child {
+    margin-left: 21px;
+}
+
+.about-person-name {
+    font-family: "Lato-Black", Arial, sans-serif;
+    color: #666d89;
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 11px;
+    letter-spacing: -0.3px;
+    /*white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;*/
+    /*height: 18px;*/
+}
+
+.about-person-description {
+    font-family: "Lato-Regular", Arial, sans-serif;
+    font-size: 12px;
+    color: #767e9e;
+    text-align: justify;
+    margin-top: 9px;
+    line-height: 21px;
+    letter-spacing: -0.1px;
+
+}
+
+.images-container {
+    margin-top: 20px;
+}
+
+.row {
+    height: 122px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+}
+
+.portfolio-image {
+    width: 220px;
+    height: 187px;
+}
+
+.photo {
+    width: 300px;
+    height: 300px;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 24px;
+    margin-left: 1px;
+}
+
+.icon {
+    display: block;
+    padding: 8px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #666d89;
+}
+
+.icon:last-child {
+    padding: 8px 0px;
+}
+
+.social-icons a {
+    margin-right: 8px;
+
+}
+
+.icon:hover {
+    background-color: #ffffff;
+}
+
+
