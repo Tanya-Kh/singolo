@@ -72,6 +72,10 @@
     text-align: justify;
 }
 
+.buttons {
+    margin-top: 10px;
+}
+
 .button {
     font-family: "Lato-Regular", Arial, sans-serif;
     font-size: 12px;
@@ -79,15 +83,18 @@
     border: 1px solid #666d89;
     border-radius: 5px;
     color: #767e9e;
-    padding: 5px 7px;
     text-align: center;
     line-height: 10px;
     margin-right: 4.5px;
     cursor: pointer;
 }
 
-.buttons {
-    margin-top: 10px;
+.button:nth-child(-n+2) {
+    padding: 5px 7px;
+}
+
+.button:nth-child(n+3) {
+    padding: 5px 5px 5px 7px;
 }
 
 .button:hover,
