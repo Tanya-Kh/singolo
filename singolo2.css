@@ -47,7 +47,6 @@
     content: "";
     height: 6px;
     width: 100%;
-    background-color: aquamarine;
     bottom: 0;
     left: 0;
 }
@@ -90,10 +89,29 @@
 .buttons {
     margin-top: 10px;
 }
+
 .button:hover,
 .button.active {
     border-color: #ffffff;
     color:#ffffff;
+}
+
+.images-container {
+    margin-top: 20px;
+    height: 620px;
+    overflow: hidden;
+}
+
+.row {
+    height: 187px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.portfolio-image {
+    width: 220px;
+    height: 187px;
 }
 
 .about {
@@ -123,14 +141,14 @@
 .about-person-name {
     font-family: "Lato-Black", Arial, sans-serif;
     color: #666d89;
+    width: 300px;
     font-size: 18px;
     text-align: justify;
     margin-top: 11px;
     letter-spacing: -0.3px;
-    /*white-space: nowrap;
+    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;*/
-    /*height: 18px;*/
+    text-overflow: ellipsis;
 }
 
 .about-person-description {
@@ -141,23 +159,6 @@
     margin-top: 9px;
     line-height: 21px;
     letter-spacing: -0.1px;
-
-}
-
-.images-container {
-    margin-top: 20px;
-}
-
-.row {
-    height: 122px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 85px;
-}
-
-.portfolio-image {
-    width: 220px;
-    height: 187px;
 }
 
 .photo {
@@ -190,7 +191,7 @@
 }
 
 .icon:hover {
-    background-color: #ffffff;
+    background-color: #ffc0cb;
 }
 
 

@@ -1,15 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 12" width="14" height="12">
-	<defs>
-		<image width="92" height="75" id="img1" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MiA3NSIgd2lkdGg9IjkyIiBoZWlnaHQ9Ijc1Ij4KCTxkZWZzPgoJCTxjbGlwUGF0aCBjbGlwUGF0aFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9ImNwMSI+CgkJCTxwYXRoIGQ9Ik0wIDBMOTIgMEw5MiA3NUwwIDc1WiIgLz4KCQk8L2NsaXBQYXRoPgoJPC9kZWZzPgoJPHN0eWxlPgoJCXRzcGFuIHsgd2hpdGUtc3BhY2U6cHJlIH0KCQkuc2hwMCB7IGZpbGw6ICMwMDAwMDAgfSAKCTwvc3R5bGU+Cgk8ZyBpZD0iUGFnZSAxIiBjbGlwLXBhdGg9InVybCgjY3AxKSI+CgkJPHBhdGggaWQ9IlBhdGggMSIgY2xhc3M9InNocDAiIGQ9Ik05MiA5LjA4Qzg4LjYxIDEwLjU4IDg0Ljk4IDExLjYgODEuMTYgMTIuMDZDODUuMDYgOS43MiA4OC4wNSA2LjAyIDg5LjQ2IDEuNjFDODUuODEgMy43NyA4MS43NyA1LjM1IDc3LjQ3IDYuMTlDNzQuMDMgMi41MiA2OS4xMiAwLjIzIDYzLjY5IDAuMjNDNTMuMjcgMC4yMyA0NC44MiA4LjY4IDQ0LjgyIDE5LjExQzQ0LjgyIDIwLjU5IDQ0Ljk5IDIyLjAzIDQ1LjMxIDIzLjQxQzI5LjYyIDIyLjYyIDE1LjcxIDE1LjExIDYuNCAzLjY5QzQuNzggNi40OCAzLjg1IDkuNzIgMy44NSAxMy4xOEMzLjg1IDE5LjcyIDcuMTggMjUuNSAxMi4yNCAyOC44OUM5LjE1IDI4Ljc5IDYuMjQgMjcuOTQgMy42OSAyNi41M0MzLjY5IDI2LjYgMy42OSAyNi42OCAzLjY5IDI2Ljc2QzMuNjkgMzUuOTEgMTAuMiA0My41NCAxOC44MyA0NS4yN0MxNy4yNSA0NS43IDE1LjU4IDQ1LjkzIDEzLjg2IDQ1LjkzQzEyLjY1IDQ1LjkzIDExLjQ2IDQ1LjgyIDEwLjMxIDQ1LjZDMTIuNzEgNTMuMDkgMTkuNjkgNTguNTUgMjcuOTQgNTguN0MyMS40OCA2My43NyAxMy4zNSA2Ni43OCA0LjUgNjYuNzhDMi45OCA2Ni43OCAxLjQ4IDY2LjY5IDAgNjYuNTJDOC4zNSA3MS44NyAxOC4yNyA3NSAyOC45MyA3NUM2My42NSA3NSA4Mi42NCA0Ni4yNCA4Mi42NCAyMS4yOUM4Mi42NCAyMC40OCA4Mi42MiAxOS42NiA4Mi41OCAxOC44NUM4Ni4yNyAxNi4xOSA4OS40NyAxMi44NyA5MiA5LjA4WiIgLz4KCTwvZz4KPC9zdmc+"/>
-	</defs>
-	<style>
-		tspan { white-space:pre }
-	</style>
-	<g id="About Us">
-		<g id="Social Media">
-			<g id="Twitter">
-				<use id="twitter" href="#img1" transform="matrix(0.152,0,0,0.16,0,0)"/>
-			</g>
-		</g>
-	</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 92 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,92,65.9176)">
+        <g id="All-glyphs" serif:id="All glyphs">
+            <path d="M0,-57.068C-3.387,-55.566 -7.023,-54.552 -10.842,-54.095C-6.943,-56.431 -3.951,-60.131 -2.541,-64.538C-6.189,-62.376 -10.229,-60.804 -14.527,-59.958C-17.971,-63.627 -22.877,-65.918 -28.305,-65.918C-38.729,-65.918 -47.18,-57.467 -47.18,-47.044C-47.18,-45.564 -47.014,-44.124 -46.691,-42.743C-62.377,-43.529 -76.289,-51.044 -85.596,-62.464C-87.221,-59.675 -88.152,-56.433 -88.152,-52.974C-88.152,-46.426 -84.82,-40.65 -79.756,-37.264C-82.848,-37.362 -85.76,-38.21 -88.305,-39.624C-88.307,-39.546 -88.307,-39.467 -88.307,-39.387C-88.307,-30.242 -81.799,-22.613 -73.166,-20.88C-74.748,-20.448 -76.416,-20.216 -78.139,-20.216C-79.354,-20.216 -80.535,-20.335 -81.689,-20.555C-79.287,-13.057 -72.314,-7.599 -64.057,-7.448C-70.518,-2.384 -78.654,0.633 -87.498,0.633C-89.021,0.633 -90.523,0.543 -92,0.367C-83.648,5.724 -73.729,8.85 -63.066,8.85C-28.35,8.85 -9.363,-19.913 -9.363,-44.856C-9.363,-45.672 -9.381,-46.487 -9.418,-47.298C-5.73,-49.958 -2.531,-53.282 0,-57.068" style="fill:rgb(122,129,154);fill-rule:nonzero;"/>
+        </g>
+    </g>
 </svg>
