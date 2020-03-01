@@ -72,13 +72,14 @@
     text-align: justify;
 }
 
-.buttons {
+.buttons-container {
     margin-top: 10px;
 }
 
 .button {
     font-family: "Lato-Regular", Arial, sans-serif;
     font-size: 12px;
+    outline: none;
     background-color: inherit;
     border: 1px solid #666d89;
     border-radius: 5px;
