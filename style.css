@@ -1,0 +1,254 @@
+﻿@font-face {
+    font-family: "Lato-Regular";
+    src: url("./assets/fonts/Lato-Regular.woff") format("woff"), url("./assets/fonts/Lato-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato-Black";
+    src: url("./assets/fonts/Lato-Black.woff") format("woff"), url("./assets/fonts/Lato-Black.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url("./assets/fonts/Lato-Bold.woff") format("woff"), url("./assets/fonts/Lato-Bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("./assets/fonts/Lato-Regular.woff") format("woff"), url("./assets/fonts/Lato-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato-Light";
+    src: url("./assets/fonts/Lato-Light.woff") format("woff"), url("./assets/fonts/Lato-Light.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 1020px;
+    margin: auto;
+}
+
+.header,
+.slider,
+.services {
+    padding-bottom: 6px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+}
+
+.header:after,
+.slider:after,
+.services:after {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.header {
+    background-color: #2d303a;
+    color: white;
+    height: 95px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Lato-Bold', Arial, sans-serif;
+}
+
+.header:after {
+    background-color: #323746;
+}
+
+.logo {
+    font-size: 25px;
+    letter-spacing: -0.5px;
+}
+
+.star {
+    color: #f06c64;
+}
+
+nav {
+    position: relative;
+    top: 3px;
+}
+
+.link {
+    font-size: 12px;
+    margin: 0 13px;
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+}
+
+.link:first-child {
+    margin-left: 0;
+}
+
+.link:last-child {
+    margin-right: 0;
+}
+
+.link + .link:before {
+    content: "";
+    background-color: #2F4F4F;
+    position: absolute;
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    top: 50%;
+    left: -13px;
+    transform: translate(-50%, -50%);
+}
+
+.link:hover,
+.link.active {
+    color: #f06c64;
+}
+
+.slider {
+    background-color: #f06c64;
+    height: 600px;
+}
+
+.slider:after {
+    background-color: #ea676b;
+}   
+
+.slide {
+    height: 100%;
+}
+
+.arrow-left {
+    position: absolute;
+    cursor: pointer;
+    left: 42px;
+    top: 49%;
+    transform: translateY(-50%);
+}
+
+.arrow-right {
+    position: absolute;
+    cursor: pointer;
+    right: 40px;
+    top: 49%;
+    transform: translateY(-50%);
+}
+
+.phone-vertical {
+    display: block;
+    position: absolute;
+    left: 110px;
+    bottom: 37px;
+}
+
+.phone-horizontal {
+    display: block;
+    position: absolute;
+    right: 81px;
+    top: 69px;
+}
+
+.services {
+    background-color: #f2f2f2;
+    height: 501px;
+    padding: 60px 40px;
+    color: #666d89;
+}
+
+.services:after {
+    background-color: #ffffff;
+}
+
+.services .services-headline {
+    font-family: 'Lato-Black', Arial, sans-serif;
+    font-size: 30px;
+}
+
+#services-description {
+    font-family: 'Lato-Light', Arial, sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#services-container {
+    margin-top: 43px;
+}
+
+.row {
+    height: 122px;
+    display: flex;
+}
+
+.service {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.service + .service {
+    margin-left: 20px;
+}
+
+.service .img {
+    margin-top: 4px;
+    padding: 9px;
+    display: block;
+    min-width: 59px;
+    min-height: 59px;
+    max-width: 59px;
+    max-height: 59px;
+    border-radius: 50%;
+    border: 2px solid #666d89;
+}
+
+.service-description-container {
+    margin-left: 21px;
+}
+
+.service-headline {
+    font-family: 'Lato-Black', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.service-description {
+    font-family: 'Lato-Regular', Arial, sans-serif;
+    font-size: 12px;
+    margin-top: 8px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.letter-space {
+    letter-spacing: -0.1px;
+}
+
+.responsive {
+    letter-spacing: -0.3px;
+}
+
+.support {
+    letter-spacing: 0.5px;
+}
