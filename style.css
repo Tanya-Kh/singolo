@@ -53,16 +53,16 @@
     position: relative;
 }
 
-.header:after,
-.slider:after,
-.services:after {
-    content: "";
-    position: absolute;
-    height: 6px;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-}
+    .header:after,
+    .slider:after,
+    .services:after {
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
 
 .header {
     background-color: #2d303a;
@@ -75,9 +75,9 @@
     font-family: 'Lato-Bold', Arial, sans-serif;
 }
 
-.header:after {
-    background-color: #323746;
-}
+    .header:after {
+        background-color: #323746;
+    }
 
 .logo {
     font-size: 25px;
@@ -101,39 +101,39 @@ nav {
     text-decoration: none;
 }
 
-.link:first-child {
-    margin-left: 0;
-}
+    .link:first-child {
+        margin-left: 0;
+    }
 
-.link:last-child {
-    margin-right: 0;
-}
+    .link:last-child {
+        margin-right: 0;
+    }
 
-.link + .link:before {
-    content: "";
-    background-color: #2F4F4F;
-    position: absolute;
-    height: 2px;
-    width: 2px;
-    border-radius: 50%;
-    top: 50%;
-    left: -13px;
-    transform: translate(-50%, -50%);
-}
+    .link + .link:before {
+        content: "";
+        background-color: #2F4F4F;
+        position: absolute;
+        height: 2px;
+        width: 2px;
+        border-radius: 50%;
+        top: 50%;
+        left: -13px;
+        transform: translate(-50%, -50%);
+    }
 
-.link:hover,
-.link.active {
-    color: #f06c64;
-}
+    .link:hover,
+    .link.active {
+        color: #f06c64;
+    }
 
 .slider {
     background-color: #f06c64;
     height: 600px;
 }
 
-.slider:after {
-    background-color: #ea676b;
-}   
+    .slider:after {
+        background-color: #ea676b;
+    }
 
 .slide {
     height: 100%;
@@ -165,40 +165,40 @@ nav {
 .phone-horizontal {
     display: block;
     position: absolute;
-    right: 81px;
+    right: 80px;
     top: 69px;
 }
 
 .services {
     background-color: #f2f2f2;
-    height: 501px;
-    padding: 60px 40px;
+    height: 500px;
+    padding: 59px 40px 60px;
     color: #666d89;
 }
 
-.services:after {
-    background-color: #ffffff;
-}
+    .services:after {
+        background-color: #ffffff;
+    }
 
-.services .services-headline {
-    font-family: 'Lato-Black', Arial, sans-serif;
-    font-size: 30px;
-}
+    .services .services-headline {
+        font-family: 'Lato-Black', Arial, sans-serif;
+        font-size: 30px;
+    }
 
 #services-description {
     font-family: 'Lato-Light', Arial, sans-serif;
     font-size: 18px;
-    margin-top: 20px;
-    line-height: 1.6;
+    margin-top: 18px;
+    line-height: 1.7;
     text-align: justify;
 }
 
 #services-container {
-    margin-top: 43px;
+    margin-top: 42px;
 }
 
 .row {
-    height: 122px;
+    height: 123px;
     display: flex;
 }
 
@@ -208,21 +208,21 @@ nav {
     display: flex;
 }
 
-.service + .service {
-    margin-left: 20px;
-}
+    .service + .service {
+        margin-left: 20px;
+    }
 
-.service .img {
-    margin-top: 4px;
-    padding: 9px;
-    display: block;
-    min-width: 59px;
-    min-height: 59px;
-    max-width: 59px;
-    max-height: 59px;
-    border-radius: 50%;
-    border: 2px solid #666d89;
-}
+    .service .img {
+        margin-top: 4px;
+        padding: 9px;
+        display: block;
+        min-width: 59px;
+        min-height: 59px;
+        max-width: 59px;
+        max-height: 59px;
+        border-radius: 50%;
+        border: 2px solid #666d89;
+    }
 
 .service-description-container {
     margin-left: 21px;
@@ -236,9 +236,12 @@ nav {
 .service-description {
     font-family: 'Lato-Regular', Arial, sans-serif;
     font-size: 12px;
+    width: 220px;
+    height: 60px;
     margin-top: 8px;
     line-height: 1.8;
     text-align: justify;
+    overflow: hidden;
 }
 
 .letter-space {
@@ -251,4 +254,175 @@ nav {
 
 .support {
     letter-spacing: 0.5px;
+}
+
+.portfolio,
+.about {
+    position: relative;
+    padding: 59px 40px 6px;
+}
+
+.portfolio {
+    background-color: #2d303a;
+    height: 869px;
+}
+
+    .portfolio:after,
+    .about:after {
+        position: absolute;
+        content: "";
+        height: 6px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+
+    .portfolio:after {
+        background-color: #323746;
+    }
+
+.portfolio-title,
+.about-title {
+    font-family: "Lato-Black", Arial, sans-serif;
+    font-size: 30px;
+    color: #666d89;
+}
+
+.portfolio-description,
+.about-description {
+    font-family: "Lato-Light", Arial, sans-serif;
+    font-size: 18px;
+    color: #767e9e;
+    margin-top: 18px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.buttons-container {
+    margin-top: 10px;
+}
+
+.button {
+    font-family: "Lato-Regular", Arial, sans-serif;
+    font-size: 12px;
+    outline: none;
+    background-color: inherit;
+    border: 1px solid #666d89;
+    border-radius: 5px;
+    color: #767e9e;
+    text-align: center;
+    line-height: 10px;
+    margin-right: 4.5px;
+    cursor: pointer;
+}
+
+    .button:nth-child(-n+2) {
+        padding: 5px 7px;
+    }
+
+    .button:nth-child(n+3) {
+        padding: 5px 5px 5px 7px;
+    }
+
+    .button:hover,
+    .button.active {
+        border-color: #ffffff;
+        color: #ffffff;
+    }
+
+.images-container {
+    margin-top: 20px;
+    height: 620px;
+    overflow: hidden;
+}
+
+.portfolio-row {
+    height: 187px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.portfolio-image {
+    width: 220px;
+    height: 187px;
+}
+
+.about {
+    background-color: #f2f2f2;
+    height: 728px;
+}
+
+    .about:after {
+        background-color: #ffffff;
+    }
+
+.about-container {
+    position: relative;
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-person:nth-child(2) {
+    margin-left: 19px;
+}
+
+.about-person:last-child {
+    margin-left: 21px;
+}
+
+.about-person-name {
+    font-family: "Lato-Black", Arial, sans-serif;
+    color: #666d89;
+    width: 300px;
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 11px;
+    letter-spacing: -0.3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.about-person-description {
+    font-family: "Lato-Regular", Arial, sans-serif;
+    font-size: 12px;
+    color: #767e9e;
+    text-align: justify;
+    margin-top: 9px;
+    line-height: 21px;
+    letter-spacing: -0.1px;
+}
+
+.photo {
+    width: 300px;
+    height: 300px;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 24px;
+    margin-left: 1px;
+}
+
+.icon {
+    display: block;
+    padding: 8px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #666d89;
+}
+
+    .icon:last-child {
+        padding: 8px 0px;
+    }
+
+.social-icons a {
+    margin-right: 8px;
+}
+
+.icon:hover {
+    background-color: #ffc0cb;
 }
