@@ -1,39 +1,33 @@
 ﻿@font-face {
-    font-family: "Lato-Regular";
+    font-family: "Lato";
     src: url("./assets/fonts/Lato-Regular.woff") format("woff"), url("./assets/fonts/Lato-Regular.woff2") format("woff2");
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Lato-Black";
+    font-family: "Lato";
     src: url("./assets/fonts/Lato-Black.woff") format("woff"), url("./assets/fonts/Lato-Black.woff2") format("woff2");
-    font-weight: normal;
+    font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Lato-Bold";
+    font-family: "Lato";
     src: url("./assets/fonts/Lato-Bold.woff") format("woff"), url("./assets/fonts/Lato-Bold.woff2") format("woff2");
-    font-weight: normal;
+    font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Lato-Regular";
-    src: url("./assets/fonts/Lato-Regular.woff") format("woff"), url("./assets/fonts/Lato-Regular.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Lato-Light";
+    font-family: "Lato";
     src: url("./assets/fonts/Lato-Light.woff") format("woff"), url("./assets/fonts/Lato-Light.woff2") format("woff2");
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 }
 
 * {
+    font-family: 'Lato', Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -75,7 +69,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Lato-Bold', Arial, sans-serif;
+    font-weight: 700;
 }
 
 .header:after {
@@ -189,12 +183,12 @@ nav {
 }
 
 .services .services-headline {
-    font-family: 'Lato-Black', Arial, sans-serif;
+    font-weight: 900;
     font-size: 30px;
 }
-  
+
 #services-description {
-    font-family: 'Lato-Light', Arial, sans-serif;
+    font-weight: 300;
     font-size: 18px;
     margin-top: 18px;
     line-height: 1.7;
@@ -237,12 +231,12 @@ nav {
 }
 
 .service-headline {
-    font-family: 'Lato-Black', Arial, sans-serif;
+    font-weight: 900;
     font-size: 18px;
 }
 
 .service-description {
-    font-family: 'Lato-Regular', Arial, sans-serif;
+    font-weight: 400;
     font-size: 12px;
     width: 220px;
     height: 60px;
@@ -277,18 +271,18 @@ nav {
 
 .portfolio:after {
     background-color: #323746;
-}   
+}
 
 .portfolio-title,
 .about-title {
-    font-family: "Lato-Black", Arial, sans-serif;
+    font-weight: 900;
     font-size: 30px;
     color: #666d89;
 }
 
 .portfolio-description,
 .about-description {
-    font-family: "Lato-Light", Arial, sans-serif;
+    font-weight: 300;
     font-size: 18px;
     color: #767e9e;
     margin-top: 18px;
@@ -301,7 +295,7 @@ nav {
 }
 
 .button {
-    font-family: "Lato-Regular", Arial, sans-serif;
+    font-weight: 400;
     font-size: 12px;
     outline: none;
     background-color: inherit;
@@ -310,16 +304,16 @@ nav {
     color: #767e9e;
     text-align: center;
     line-height: 10px;
-    margin-right: 4.5px;
+    margin-right: 7px;
     cursor: pointer;
 }
 
 .button:nth-child(-n+2) {
-    padding: 5px 7px;
+    padding: 5px 5.5px 5px 7px;
 }
 
 .button:nth-child(n+3) {
-    padding: 5px 5px 5px 7px;
+    padding: 5px 4.5px 5px 6px;
 }
 
 .button:hover,
@@ -329,7 +323,7 @@ nav {
 }
 
 .images-container {
-    margin-top: 20px;
+    margin-top: 19px;
     height: 620px;
     overflow: hidden;
 }
@@ -374,7 +368,7 @@ nav {
 }
 
 .about-person-name {
-    font-family: "Lato-Black", Arial, sans-serif;
+    font-weight: 900;
     color: #666d89;
     width: 300px;
     font-size: 18px;
@@ -387,7 +381,7 @@ nav {
 }
 
 .about-person-description {
-    font-family: "Lato-Regular", Arial, sans-serif;
+    font-weight: 400;
     font-size: 12px;
     color: #767e9e;
     text-align: justify;
@@ -438,15 +432,15 @@ nav {
 
 .quote:after {
     background-color: #ea676b;
-}    
+}
 
 .quote-title {
-    font-family: "Lato-Black", Arial, sans-serif;
+    font-weight: 900;
     font-size: 30px;
 }
 
 .quote-description {
-    font-family: "Lato-Light", Arial, sans-serif;
+    font-weight: 300;
     font-size: 18px;
     margin-top: 18px;
     line-height: 1.65;
@@ -481,17 +475,17 @@ nav {
 }    
 
 .form-textarea {
-    height: 203px;
+    height: 202.5px;
     resize: none;
     padding: 11px 14px 13px;
     letter-spacing: 0.2px;
 }
 
 .form-button {
-    font-family: "Lato-Black", Arial, sans-serif;
+    font-weight: 900;
     background-color: inherit;
     color: inherit;
-    border: 1px solid inherit;
+    border: 1px solid #f0d8d9;
     border-radius: 5px;
     padding: 6px 12px;
     cursor: pointer;
@@ -500,11 +494,11 @@ nav {
 .form-button:hover {
     background-color: #f0d8d9;
     color: #d6564f;
-}    
+}
 
 .form-input::placeholder,
 .form-textarea::placeholder {
-    font-family: "Lato-Regular", Arial, sans-serif;
+    font-weight: 400;
     font-size: 12px;
     color: #f48c8f;
 }
@@ -515,14 +509,14 @@ nav {
 }
 
 .contact-info-title {
-    font-family: "Lato-Black", Arial, sans-serif;
+    font-weight: 900;
     font-size: 18px;
     line-height: 18px;
     padding-left: 2px;
 }
 
 .contact-info-description {
-    font-family: "Lato-Regular", Arial, sans-serif;
+    font-weight: 400;
     font-size: 12px;
     line-height: 22px;
     margin-top: 10px;
@@ -542,10 +536,10 @@ nav {
 
 .contact-icon:first-child {
     margin-left: 4px;
-}    
+}
 
 .address {
-    font-family: "Lato-Regular", Arial, sans-serif;
+    font-weight: 400;
     font-size: 12px;
     color: inherit;
     padding-left: 2px;
@@ -553,7 +547,7 @@ nav {
 
 .contact-link {
     display: block;
-    font-family: "Lato-Regular", Arial, sans-serif;
+    font-weight: 400;
     font-size: 12px;
     text-decoration: none;
     color: inherit;
@@ -573,7 +567,7 @@ nav {
 }
 
 .footer-copyright {
-    font-family: "Lato-Regular", Arial, sans-serif;
+    font-weight: 400;
     font-size: 12px;
 }
 
