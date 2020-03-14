@@ -148,7 +148,7 @@ nav {
     left: 42px;
     top: 49%;
     transform: translateY(-50%);
-    z-index: 1;
+    z-index: 3;
 }
 
 .arrow-right {
@@ -159,7 +159,7 @@ nav {
     right: 40px;
     top: 49%;
     transform: translateY(-50%);
-    z-index: 1;
+    z-index: 3;
 }
 
 .phone-vertical {
@@ -167,6 +167,50 @@ nav {
     position: absolute;
     left: 110px;
     bottom: 37px;
+}
+
+#left-phone-button {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 460px;
+    left: 197px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+#left-screen {
+    position: absolute;
+    background-color: #2d303a;
+    top: 118px;
+    left: 126px;
+    width: 188px;
+    height: 333px;
+    z-index: -1;
+}
+
+#right-screen {
+    position: absolute;
+    background-color: #2d303a;
+    top: 187px;
+    right: 202px;
+    width: 333px;
+    height: 190px;
+    z-index: -1;
+}
+
+#right-phone-button {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 260px;
+    right: 543px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    z-index: 3;
 }
 
 .phone-horizontal {
@@ -177,10 +221,11 @@ nav {
 }
 
 .second-slide {
-    display: none;
+    display: block;
     position: absolute;
     top: 0px;
     left: 0px;
+    z-index: -2;
 }
 
 .services {
