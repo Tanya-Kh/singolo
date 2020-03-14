@@ -7,6 +7,7 @@ const leftScreen = document.getElementById("left-screen");
 const rightScreen = document.getElementById("right-screen");
 const leftButton = document.getElementById("left-phone-button");
 const rightButton = document.getElementById("right-phone-button");
+const images = document.querySelectorAll(".portfolio-image");
 
 arrowLeft[0].addEventListener("click", showSecondSlide);
 arrowRight[0].addEventListener("click", showSecondSlide);
@@ -18,6 +19,9 @@ headerMenu.addEventListener("click", (event) => {
 	event.target.classList.add("active")
 });
 
+for (var i = 0; i < images.length; i++) {
+	images[i].addEventListener('click', activeImage, false);
+}
 
 function showSecondSlide() {
 
@@ -49,6 +53,13 @@ function blackScreenRight() {
 	}
 
 }
+
+function activeImage(event) {
+
+	images.forEach(el => el.classList.remove("active"))
+	event.target.classList.add("active")
+}
+
 	
 
 

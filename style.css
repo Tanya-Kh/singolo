@@ -396,6 +396,10 @@ nav {
     height: 187px;
 }
 
+.portfolio-image.active {
+    border: 5px solid #F06C64;
+}
+
 .portfolio-image + .portfolio-image {
     margin-left: 20px;
 }
