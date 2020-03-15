@@ -132,6 +132,10 @@ nav {
     background-color: #ea676b;
 }
 
+.slider.extra:after {
+    background-color: #4682b4;
+}
+      
 .slide {
     height: 100%;
 }
@@ -139,22 +143,23 @@ nav {
 .arrow-left {
     position: absolute;
     cursor: pointer;
+    height: 27px;
+    width: 16px;
     left: 42px;
     top: 49%;
     transform: translateY(-50%);
+    z-index: 3;
 }
 
 .arrow-right {
     position: absolute;
     cursor: pointer;
+    width: 16px;
+    width: 16px;
     right: 40px;
     top: 49%;
     transform: translateY(-50%);
-}
-
-.arrow-right:hover,
-.arrow-left:hover {
-    border: 1px solid #f2f2f2;
+    z-index: 3;
 }
 
 .phone-vertical {
@@ -164,11 +169,63 @@ nav {
     bottom: 37px;
 }
 
+#left-phone-button {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 460px;
+    left: 197px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+#left-screen {
+    position: absolute;
+    background-color: #2d303a;
+    top: 118px;
+    left: 126px;
+    width: 188px;
+    height: 333px;
+    z-index: -1;
+}
+
+#right-screen {
+    position: absolute;
+    background-color: #2d303a;
+    top: 187px;
+    right: 202px;
+    width: 333px;
+    height: 190px;
+    z-index: -1;
+}
+
+#right-phone-button {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 260px;
+    right: 543px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    z-index: 3;
+}
+
 .phone-horizontal {
     display: block;
     position: absolute;
     right: 80px;
     top: 69px;
+}
+
+.second-slide {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
 }
 
 .services {
@@ -323,24 +380,22 @@ nav {
 }
 
 .images-container {
-    margin-top: 19px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+    margin-top: 9px;
     height: 620px;
     overflow: hidden;
-}
-
-.portfolio-row {
-    height: 187px;
-    display: flex;
-    margin-bottom: 20px;
 }
 
 .portfolio-image {
     width: 220px;
     height: 187px;
+    margin: 10px;
 }
 
-.portfolio-image + .portfolio-image {
-    margin-left: 20px;
+.portfolio-image.active {
+    border: 5px solid #F06C64;
 }
 
 .about {
@@ -479,6 +534,7 @@ nav {
     resize: none;
     padding: 11px 14px 13px;
     letter-spacing: 0.2px;
+    
 }
 
 .form-button {
@@ -501,6 +557,31 @@ nav {
     font-weight: 400;
     font-size: 12px;
     color: #f48c8f;
+}
+
+#message-block {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0.95);
+    z-index: 4;
+}
+
+#message-block.hidden {
+    display: none;
+}
+
+#message {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+    background: #f0d8d9;
+    color:white;
 }
 
 .contact-info {
