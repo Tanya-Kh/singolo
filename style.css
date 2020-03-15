@@ -565,7 +565,7 @@ nav {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(255,255,255,0.95);
+    background: rgba(0,0,0,0.8);
     z-index: 4;
 }
 
@@ -577,11 +577,22 @@ nav {
     position: absolute;
     top: 40%;
     left: 45%;
-    padding: 10px;
+    padding: 30px;
     border: 1px solid black;
+    border-radius: 5px;
     text-align: center;
     background: #f0d8d9;
-    color:white;
+    color: black;
+}
+
+#close-button {
+    font-weight: 900;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
 }
 
 .contact-info {
