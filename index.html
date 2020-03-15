@@ -113,33 +113,27 @@
         Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
         eget lacinia odio sem nec elit.
     </p>
-    <div class="buttons-container">
+    <div class="buttons-container" id="buttons-container">
         <button class="button active">All</button>
         <button class="button">Web Design</button>
         <button class="button">Graphic Design</button>
         <button class="button">Artwork</button>
     </div>
     <div class="images-container">
-        <div class="portfolio-row">
             <img class="portfolio-image" src="assets/images/portfolio-images/1.jpg" alt="Ship" />
             <img class="portfolio-image" src="assets/images/portfolio-images/2.jpg" alt="Green girl" />
             <img class="portfolio-image" src="assets/images/portfolio-images/3.jpg" alt="Night city" />
             <img class="portfolio-image" src="assets/images/portfolio-images/4.jpg" alt="Robot" />
-        </div>
-        <div class="portfolio-row">
             <img class="portfolio-image" src="assets/images/portfolio-images/5.jpg" alt="Animals" />
             <img class="portfolio-image" src="assets/images/portfolio-images/6.jpg" alt="Different things" />
             <img class="portfolio-image" src="assets/images/portfolio-images/7.jpg" alt="UFO" />
             <img class="portfolio-image" src="assets/images/portfolio-images/8.jpg" alt="Birds" />
-        </div>
-        <div class="portfolio-row">
             <img class="portfolio-image" src="assets/images/portfolio-images/9.jpg" alt="Green monster" />
             <img class="portfolio-image" src="assets/images/portfolio-images/10.jpg" alt="Words" />
             <img class="portfolio-image" src="assets/images/portfolio-images/11.jpg" alt="White monster" />
             <img class="portfolio-image" src="assets/images/portfolio-images/12.jpg" alt="Envelope" />
-        </div>
     </div>
-</section>
+    </section>
 <section class="about" id="about">
     <h2 class="about-title">About Us</h2>
     <p class="about-description">
@@ -206,13 +200,19 @@
         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
     </p>
     <div class="quote-container">
-        <form class="form" action="#" method="post">
-            <input class="form-input" type="text" name="name" placeholder="Name (Required)" required>
-            <input class="form-input" type="email" name="email" placeholder="Email (Required)" required>
-            <input class="form-input" type="text" name="subject" placeholder="Subject">
-            <textarea class="form-textarea" name="details" placeholder="Describe your object in detail..."></textarea>
-            <input class="form-button" type="submit" name="submit" value="Submit">
+        <form class="form" id="form" method="post"> 
+            <input class="form-input" id="name" type="text" name="name" placeholder="Name (Required)" required>
+            <input class="form-input" id="email" type="email" name="email" placeholder="Email (Required)" required>
+            <input class="form-input" id="subject" type="text" name="subject" placeholder="Subject">
+            <textarea class="form-textarea" id="details" name="details" placeholder="Describe your object in detail..."></textarea>
+            <input class="form-button" id="btn" type="submit" name="submit" value="Submit">
         </form>
+        <div id="message-block" class="hidden">
+            <div id="message">
+                <p>Письмо отправлено<br/><span id="subjectMessage"></span><br/><span id="detailsMessage"></span></p><br/>
+                <button id="close-button">OK</button>
+            </div>
+        </div>
         <div class="contact-info">
             <h2 class="contact-info-title">Contact Information</h2>
             <p class="contact-info-description">
