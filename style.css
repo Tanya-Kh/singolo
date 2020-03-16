@@ -533,8 +533,7 @@ nav {
     height: 202.5px;
     resize: none;
     padding: 11px 14px 13px;
-    letter-spacing: 0.2px;
-    
+    letter-spacing: 0.2px; 
 }
 
 .form-button {
@@ -575,8 +574,12 @@ nav {
 
 #message {
     position: absolute;
-    top: 40%;
-    left: 45%;
+    top: calc((100% - 180px)/2);
+    left: calc((100% - 250px)/2);
+    overflow: auto;
+    width: 250px;
+    height: 180px;
+    word-wrap: break-word;
     padding: 30px;
     border: 1px solid black;
     border-radius: 5px;
