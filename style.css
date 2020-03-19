@@ -33,9 +33,17 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .wrapper {
     width: 1020px;
     margin: auto;
+}
+
+main {
+    margin-top: 95px;
 }
 
 .header,
@@ -62,6 +70,9 @@
 }
 
 .header {
+    position: fixed;
+    top: 0;
+    width: 1020px;
     background-color: #2d303a;
     color: white;
     height: 95px;
@@ -70,6 +81,7 @@
     align-items: center;
     justify-content: space-between;
     font-weight: 700;
+    z-index: 4;
 }
 
 .header:after {
@@ -135,7 +147,7 @@ nav {
 .slider.extra:after {
     background-color: #4682b4;
 }
-      
+   
 .slide {
     height: 100%;
 }
@@ -571,7 +583,7 @@ nav {
 #message-block.hidden {
     display: none;
 }
-
+    
 #message {
     position: absolute;
     top: calc((100% - 180px)/2);

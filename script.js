@@ -62,8 +62,6 @@ button.addEventListener("click", () => {
 });
 
 closeButton.addEventListener("click", () => {
-	//document.getElementById("subject").innerText = "";
-	//document.getElementById("details").innerText = "";
 	form.reset();
 	document.getElementById("message-block").classList.add("hidden");
 });
