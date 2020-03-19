@@ -13,7 +13,6 @@ const portfolioTabs = document.getElementById("buttons-container");
 const portfolioButtons = portfolioTabs.querySelectorAll("button");
 const button = document.getElementById("btn");
 const closeButton = document.getElementById("close-button");
-//form
 const form = document.getElementById("form");
 
 console.log(imagesContainer)
@@ -63,8 +62,9 @@ button.addEventListener("click", () => {
 });
 
 closeButton.addEventListener("click", () => {
-	document.getElementById("subject").innerText = "";
-	document.getElementById("details").innerText = "";
+	//document.getElementById("subject").innerText = "";
+	//document.getElementById("details").innerText = "";
+	form.reset();
 	document.getElementById("message-block").classList.add("hidden");
 });
 
