@@ -1,4 +1,5 @@
 ﻿const headerMenu = document.getElementById("nav");
+const headerLinks = headerMenu.querySelectorAll("a");
 const arrowLeft = document.getElementsByClassName("arrow-left");
 const arrowRight = document.getElementsByClassName("arrow-right");
 const secondSlide = document.getElementById("second-slide");
@@ -14,17 +15,34 @@ const portfolioButtons = portfolioTabs.querySelectorAll("button");
 const button = document.getElementById("btn");
 const closeButton = document.getElementById("close-button");
 const form = document.getElementById("form");
+//var changeScroll = 0;
 
-console.log(imagesContainer)
 arrowLeft[0].addEventListener("click", showSecondSlide);
 arrowRight[0].addEventListener("click", showSecondSlide);
 leftButton.addEventListener("click", blackScreenLeft);
 rightButton.addEventListener("click", blackScreenRight);
+document.addEventListener("scroll", onScroll);
 
 headerMenu.addEventListener("click", (event) => {
-	headerMenu.querySelectorAll("a").forEach(el => el.classList.remove("active"))
-	event.target.classList.add("active")
+	headerLinks.forEach(el => el.classList.remove("active"))
+	//changeScrollY();
+	event.target.classList.add("active");
+	window.scrollY -= 95;
+	//window.scrollY -= 95;
+	//changeScroll += 95;
+	//event.target.g etAttribute("href").substr(1);
+	//document.querySelectorAll("section, footer").forEach((el) => {
+	//	if (el.getAttribute("id") === event.target.getAttribute("href").substr(1)) {
+	//		el.offsetHeight == el.offsetHeight + "95px";
+	//		el.classList.add("anchor");
+	//	}
+	//})
 });
+
+//function changeScrollY() {
+//	window.scrollY -= 95;
+//	changeScroll += 95;
+//}
 
 for (let i = 0; i < images.length; i++) {
 	images[i].addEventListener("click", activeImage, false);
@@ -65,6 +83,24 @@ closeButton.addEventListener("click", () => {
 	form.reset();
 	document.getElementById("message-block").classList.add("hidden");
 });
+
+function onScroll(event) {
+	const curPosition = window.scrollY;
+	document.querySelectorAll("header, section, footer").forEach((el) => {
+
+		if (el.offsetTop <= curPosition && (el.offsetTop + el.offsetHeight) > curPosition) {
+			headerLinks.forEach((a) => {
+				a.classList.remove("active");
+
+				if ((el.getAttribute("id") === a.getAttribute("href").substr(1)) ||
+					(el.getAttribute("id") === "header" && a.getAttribute("href") === "#slider")
+					) {
+					a.classList.add("active");
+				}
+			});
+		}
+	});
+}
 
 function showSecondSlide() {
 

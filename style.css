@@ -53,6 +53,7 @@ main {
     padding-left: 40px;
     padding-right: 40px;
     position: relative;
+    scroll-margin-top: 95px;
 }
 
 .header:after,
@@ -68,6 +69,16 @@ main {
     bottom: 0;
     left: 0;
 }
+
+/*.anchor:before {
+    content:"";
+    position: absolute;
+    height: 95px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color:#323746;
+}*/
 
 .header {
     position: fixed;
@@ -331,6 +342,7 @@ nav {
 .about {
     position: relative;
     padding: 59px 40px 6px;
+    scroll-margin-top: 95px;
 }
 
 .portfolio {
@@ -495,6 +507,7 @@ nav {
     height: 654.5px;
     background-color: #f06c64;
     color: #f0d8d9;
+    scroll-margin-top: 95px;
 }
 
 .quote:after {
