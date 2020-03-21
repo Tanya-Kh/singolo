@@ -15,7 +15,7 @@ const portfolioButtons = portfolioTabs.querySelectorAll("button");
 const button = document.getElementById("btn");
 const closeButton = document.getElementById("close-button");
 const form = document.getElementById("form");
-const anchors = document.querySelectorAll("header, section")
+const anchors = document.querySelectorAll("header, section");
 
 arrowLeft[0].addEventListener("click", showSecondSlide);
 arrowRight[0].addEventListener("click", showSecondSlide);
@@ -86,30 +86,12 @@ function showSecondSlide() {
 
 	if (secondSlide.style.zIndex !== "2") {
 		secondSlide.style.zIndex = "2";
-		slider.className = "slider extra";
+		slider.className = "slider extra";	
 	} else {
 		secondSlide.style.zIndex = "-2";
 		slider.className = "slider";
 	}
 }
-
-//function blackScreenLeft() {
-
-//	if (leftScreen.style.zIndex != "1") {
-//		leftScreen.style.zIndex = "1";
-//	} else {
-//		leftScreen.style.zIndex = "-1";
-//	}
-//}
-
-//function blackScreenRight() {
-
-//	if (rightScreen.style.zIndex != "1") {
-//		rightScreen.style.zIndex = "1";
-//	} else {
-//		rightScreen.style.zIndex = "-1";
-//	}
-//}
 
 function blackScreenLeft() {
 	blackScreen(leftScreen);
@@ -118,7 +100,6 @@ function blackScreenLeft() {
 function blackScreenRight() {
 	blackScreen(rightScreen);
 }
-
 
 function blackScreen(screen) {
 	if (screen.style.zIndex !== "1") {
@@ -130,7 +111,7 @@ function blackScreen(screen) {
 
 function activeImage(event) {
 	images.forEach(el => el.classList.remove("active"));
-	event.target.classList.add("active")
+	event.target.classList.add("active");
 }
 
 function activeButton(event) {
@@ -149,5 +130,5 @@ function shuffleImages() {
 	shuffledImages.forEach((image) => {
 		image.remove();
 		imagesContainer.appendChild(image);
-	})
+	});
 }
