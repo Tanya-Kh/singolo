@@ -15,7 +15,7 @@ const portfolioButtons = portfolioTabs.querySelectorAll("button");
 const button = document.getElementById("btn");
 const closeButton = document.getElementById("close-button");
 const form = document.getElementById("form");
-//var changeScroll = 0;
+const anchors = document.querySelectorAll("header, section")
 
 arrowLeft[0].addEventListener("click", showSecondSlide);
 arrowRight[0].addEventListener("click", showSecondSlide);
@@ -23,55 +23,34 @@ leftButton.addEventListener("click", blackScreenLeft);
 rightButton.addEventListener("click", blackScreenRight);
 document.addEventListener("scroll", onScroll);
 
-headerMenu.addEventListener("click", (event) => {
-	headerLinks.forEach(el => el.classList.remove("active"))
-	//changeScrollY();
-	event.target.classList.add("active");
-	window.scrollY -= 95;
-	//window.scrollY -= 95;
-	//changeScroll += 95;
-	//event.target.g etAttribute("href").substr(1);
-	//document.querySelectorAll("section, footer").forEach((el) => {
-	//	if (el.getAttribute("id") === event.target.getAttribute("href").substr(1)) {
-	//		el.offsetHeight == el.offsetHeight + "95px";
-	//		el.classList.add("anchor");
-	//	}
-	//})
+images.forEach((image)=> {
+	image.addEventListener("click", activeImage);
 });
 
-//function changeScrollY() {
-//	window.scrollY -= 95;
-//	changeScroll += 95;
-//}
+portfolioTabs.addEventListener("click", activeButton);
 
-for (let i = 0; i < images.length; i++) {
-	images[i].addEventListener("click", activeImage, false);
-}
-
-portfolioTabs.addEventListener("click", activeButton)
-
-for (var i = 0; i < portfolioButtons.length; i++) {
-	portfolioButtons[i].addEventListener("click", shuffleImages, false);
-}
+portfolioButtons.forEach((portfolioButton)=> {
+	portfolioButton.addEventListener("click", shuffleImages);
+});
 
 button.addEventListener("click", () => {
-	
-	form.addEventListener("submit", (evt) => {
-		evt.preventDefault();
-	})
+
+	form.addEventListener("submit", (e) => {
+		e.preventDefault();
+	});
 
 	const subject = document.getElementById("subject").value.toString();
 	const details = document.getElementById("details").value.toString();
-	let subjectMessage = document.getElementById("subjectMessage");
-	let detailsMessage = document.getElementById("detailsMessage");
+	const subjectMessage = document.getElementById("subjectMessage");
+	const detailsMessage = document.getElementById("detailsMessage");
 
-	if (document.getElementById("name").value.toString() != "" &&
-		document.getElementById("email").value.toString() != "") {
-		subject == "" ?
+	if (document.getElementById("name").value.toString() !== "" &&
+		document.getElementById("email").value.toString() !== "") {
+		subject === "" ?
 			subjectMessage.innerText = "Без темы" :
 			subjectMessage.innerText = "Тема: " + document.getElementById("subject").value.toString();
 
-		details == "" ?
+		details === "" ?
 			detailsMessage.innerText = "Без описания" :
 			detailsMessage.innerText = "Описание: " + document.getElementById("details").value.toString();
 
@@ -84,9 +63,10 @@ closeButton.addEventListener("click", () => {
 	document.getElementById("message-block").classList.add("hidden");
 });
 
-function onScroll(event) {
-	const curPosition = window.scrollY;
-	document.querySelectorAll("header, section, footer").forEach((el) => {
+function onScroll() {
+	const curPosition = window.scrollY + 100;
+
+	anchors.forEach((el) => {
 
 		if (el.offsetTop <= curPosition && (el.offsetTop + el.offsetHeight) > curPosition) {
 			headerLinks.forEach((a) => {
@@ -104,7 +84,7 @@ function onScroll(event) {
 
 function showSecondSlide() {
 
-	if (secondSlide.style.zIndex != "2") {
+	if (secondSlide.style.zIndex !== "2") {
 		secondSlide.style.zIndex = "2";
 		slider.className = "slider extra";
 	} else {
@@ -113,33 +93,50 @@ function showSecondSlide() {
 	}
 }
 
-function blackScreenLeft() {
+//function blackScreenLeft() {
 
-	if (leftScreen.style.zIndex != "1") {
-		leftScreen.style.zIndex = "1";
-	} else {
-		leftScreen.style.zIndex = "-1";
-	}
+//	if (leftScreen.style.zIndex != "1") {
+//		leftScreen.style.zIndex = "1";
+//	} else {
+//		leftScreen.style.zIndex = "-1";
+//	}
+//}
+
+//function blackScreenRight() {
+
+//	if (rightScreen.style.zIndex != "1") {
+//		rightScreen.style.zIndex = "1";
+//	} else {
+//		rightScreen.style.zIndex = "-1";
+//	}
+//}
+
+function blackScreenLeft() {
+	blackScreen(leftScreen);
 }
 
 function blackScreenRight() {
+	blackScreen(rightScreen);
+}
 
-	if (rightScreen.style.zIndex != "1") {
-		rightScreen.style.zIndex = "1";
+
+function blackScreen(screen) {
+	if (screen.style.zIndex !== "1") {
+		screen.style.zIndex = "1";
 	} else {
-		rightScreen.style.zIndex = "-1";
+		screen.style.zIndex = "-1";
 	}
 }
 
 function activeImage(event) {
-	images.forEach(el => el.classList.remove("active"))
+	images.forEach(el => el.classList.remove("active"));
 	event.target.classList.add("active")
 }
 
-function activeButton() {
-	portfolioButtons.forEach(el => el.classList.remove("active"))
+function activeButton(event) {
+	portfolioButtons.forEach(el => el.classList.remove("active"));
 	event.target.classList.add("active");
-}	
+}
 
 function shuffleImages() {
 	const shuffledImages = [...images];
@@ -147,18 +144,10 @@ function shuffleImages() {
 	shuffledImages.forEach((_, i) => {
 		const j = Math.floor(Math.random() * (i + 1));
 		[shuffledImages[i], shuffledImages[j]] = [shuffledImages[j], shuffledImages[i]];
-	})
+	});
 
 	shuffledImages.forEach((image) => {
 		image.remove();
 		imagesContainer.appendChild(image);
 	})
 }
-
-
-
-
-
-
-
-
