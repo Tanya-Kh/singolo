@@ -47,7 +47,6 @@ main {
 }
 
 .header,
-.slider,
 .services {
     padding-bottom: 6px;
     padding-left: 40px;
@@ -56,8 +55,13 @@ main {
     scroll-margin-top: 95px;
 }
 
+#slider {
+    position: relative;
+}
+
 .header:after,
-.slider:after,
+#first-slide:after,
+#second-slide:after,
 .services:after,
 .portfolio:after,
 .about:after,
@@ -69,16 +73,6 @@ main {
     bottom: 0;
     left: 0;
 }
-
-/*.anchor:before {
-    content:"";
-    position: absolute;
-    height: 95px;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color:#323746;
-}*/
 
 .header {
     position: fixed;
@@ -147,20 +141,27 @@ nav {
 }
 
 .slider {
-    background-color: #f06c64;
     height: 600px;
+    overflow: hidden;
+    scroll-margin-top: 95px;
 }
 
-.slider:after {
+#first-slide {
+    background-color: #f06c64;
+}
+
+#first-slide:after {
     background-color: #ea676b;
 }
 
-.slider.extra:after {
+#second-slide:after {
     background-color: #4682b4;
 }
    
 .slide {
+    position: relative;
     height: 100%;
+    animation: 1s ease-in-out;
 }
 
 .arrow-left {
@@ -246,9 +247,10 @@ nav {
 .second-slide {
     display: block;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
     z-index: -2;
+    animation: 1s ease-in-out;
+    height: 100%;
 }
 
 .services {
@@ -698,4 +700,41 @@ nav {
 
 .quote--icons a {
     margin-right: 8px;
+}
+
+.to-left {
+    animation-name: left;
+}
+
+.to-right {
+    animation-name: right;
+    animation-direction: reverse;
+}
+
+.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+.from-right {
+    animation-name: right;
+}
+
+@keyframes left {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes right {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0;
+    }
 }

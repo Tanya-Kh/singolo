@@ -2,6 +2,7 @@
 const headerLinks = headerMenu.querySelectorAll("a");
 const arrowLeft = document.getElementsByClassName("arrow-left");
 const arrowRight = document.getElementsByClassName("arrow-right");
+const firstSlide = document.getElementById("first-slide");
 const secondSlide = document.getElementById("second-slide");
 const slider = document.getElementById("slider");
 const leftScreen = document.getElementById("left-screen");
@@ -17,8 +18,8 @@ const closeButton = document.getElementById("close-button");
 const form = document.getElementById("form");
 const anchors = document.querySelectorAll("header, section");
 
-arrowLeft[0].addEventListener("click", showSecondSlide);
-arrowRight[0].addEventListener("click", showSecondSlide);
+arrowLeft[0].addEventListener("click", slideLeft);
+arrowRight[0].addEventListener("click", slideRight);
 leftButton.addEventListener("click", blackScreenLeft);
 rightButton.addEventListener("click", blackScreenRight);
 document.addEventListener("scroll", onScroll);
@@ -82,14 +83,53 @@ function onScroll() {
 	});
 }
 
-function showSecondSlide() {
-
+function slideLeft() {
 	if (secondSlide.style.zIndex !== "2") {
+		firstSlide.classList.add("to-right");
+		firstSlide.addEventListener("animationend", () => {
+			firstSlide.classList.remove("to-right");
+		});
 		secondSlide.style.zIndex = "2";
-		slider.className = "slider extra";	
-	} else {
+		secondSlide.classList.add("from-left");
+		secondSlide.addEventListener("animationend", () => {
+			secondSlide.classList.remove("from-left");
+		});
+	}
+	else {
+		secondSlide.classList.add("to-right");
+		secondSlide.addEventListener("animationend", () => {
+			secondSlide.classList.remove("to-right");
+		});
 		secondSlide.style.zIndex = "-2";
-		slider.className = "slider";
+		firstSlide.classList.add("from-left");
+		firstSlide.addEventListener("animationend", () => {
+			firstSlide.classList.remove("from-left");
+		});
+	}
+}
+
+function slideRight() {
+	if (secondSlide.style.zIndex !== "2") {
+		firstSlide.classList.add("to-left");
+		firstSlide.addEventListener("animationend", () => {
+			firstSlide.classList.remove("to-left");
+		});
+		secondSlide.style.zIndex = "2";
+		secondSlide.classList.add("from-right");
+		secondSlide.addEventListener("animationend", () => {
+			secondSlide.classList.remove("from-right");
+		});
+	}
+	else {
+		secondSlide.classList.add("to-left");
+		secondSlide.addEventListener("animationend", () => {
+			secondSlide.classList.remove("to-left");
+		});
+		secondSlide.style.zIndex = "-2";
+		firstSlide.classList.add("from-right");
+		firstSlide.addEventListener("animationend", () => {
+			firstSlide.classList.remove("from-right");
+		});
 	}
 }
 
