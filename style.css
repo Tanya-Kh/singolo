@@ -33,22 +33,35 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .wrapper {
     width: 1020px;
     margin: auto;
 }
 
+main {
+    margin-top: 95px;
+}
+
 .header,
-.slider,
 .services {
     padding-bottom: 6px;
     padding-left: 40px;
     padding-right: 40px;
     position: relative;
+    scroll-margin-top: 95px;
+}
+
+#slider {
+    position: relative;
 }
 
 .header:after,
-.slider:after,
+#first-slide:after,
+#second-slide:after,
 .services:after,
 .portfolio:after,
 .about:after,
@@ -62,6 +75,9 @@
 }
 
 .header {
+    position: fixed;
+    top: 0;
+    width: 1020px;
     background-color: #2d303a;
     color: white;
     height: 95px;
@@ -70,6 +86,7 @@
     align-items: center;
     justify-content: space-between;
     font-weight: 700;
+    z-index: 4;
 }
 
 .header:after {
@@ -124,20 +141,27 @@ nav {
 }
 
 .slider {
-    background-color: #f06c64;
     height: 600px;
+    overflow: hidden;
+    scroll-margin-top: 95px;
 }
 
-.slider:after {
+#first-slide {
+    background-color: #f06c64;
+}
+
+#first-slide:after {
     background-color: #ea676b;
 }
 
-.slider.extra:after {
+#second-slide:after {
     background-color: #4682b4;
 }
-      
+   
 .slide {
+    position: relative;
     height: 100%;
+    animation: 1s ease-in-out;
 }
 
 .arrow-left {
@@ -223,9 +247,10 @@ nav {
 .second-slide {
     display: block;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
     z-index: -2;
+    animation: 1s ease-in-out;
+    height: 100%;
 }
 
 .services {
@@ -319,6 +344,7 @@ nav {
 .about {
     position: relative;
     padding: 59px 40px 6px;
+    scroll-margin-top: 95px;
 }
 
 .portfolio {
@@ -483,6 +509,7 @@ nav {
     height: 654.5px;
     background-color: #f06c64;
     color: #f0d8d9;
+    scroll-margin-top: 95px;
 }
 
 .quote:after {
@@ -571,7 +598,7 @@ nav {
 #message-block.hidden {
     display: none;
 }
-
+    
 #message {
     position: absolute;
     top: calc((100% - 180px)/2);
@@ -673,4 +700,41 @@ nav {
 
 .quote--icons a {
     margin-right: 8px;
+}
+
+.to-left {
+    animation-name: left;
+}
+
+.to-right {
+    animation-name: right;
+    animation-direction: reverse;
+}
+
+.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+.from-right {
+    animation-name: right;
+}
+
+@keyframes left {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes right {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0;
+    }
 }
