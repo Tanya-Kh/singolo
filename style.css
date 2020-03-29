@@ -740,6 +740,10 @@ nav {
 }
 
 @media (max-width: 1020px) {
+
+    .header {
+        width: 100%;
+    }
     
     .slider {
         height: 452px;
@@ -768,7 +772,7 @@ nav {
         right: 3.7%;
     }
 
-    #second-slide-image {
+    .second-slide > img{
         width: 768px;
         height: 452px;
     }
@@ -867,6 +871,13 @@ nav {
     }
 }
 
+/*to work in Chrome*/
+@media (max-width: 768px) and (min-width: 768px) {
+    .header {
+        width: 768px;
+    }
+}
+
 
 @media (max-width: 767px) {
     .header,
@@ -877,9 +888,6 @@ nav {
     .form-button {
         width: 100%;
     }
- 
-
-    
 }
 
 @media (max-width: 376px) {  
