@@ -256,7 +256,7 @@ nav {
 .services {
     background-color: #f2f2f2;
     height: 500px;
-    padding: 59px 40px 60px;
+    padding: 59px 47px 60px 40px;
     color: #666d89;
 }
 
@@ -279,21 +279,15 @@ nav {
 
 #services-container {
     margin-top: 42px;
-}
-
-.row {
-    height: 123px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .service {
-    width: 100%;
-    height: 100%;
+    width: 292px;
     display: flex;
-}
-
-.service + .service {
-    margin-left: 20px;
+    margin-bottom: 34px;
 }
 
 .service .img {
@@ -320,7 +314,7 @@ nav {
 .service-description {
     font-weight: 400;
     font-size: 12px;
-    width: 220px;
+    width: 100%;
     height: 60px;
     margin-top: 8px;
     line-height: 1.8;
@@ -772,9 +766,24 @@ nav {
         right: 3.7%;
     }
 
-    .second-slide > img{
+    .second-slide > img {
         width: 768px;
         height: 452px;
+    }
+
+    .services {
+        height: auto;
+        padding: 40px 58px 26px 40px;
+    }
+
+    #services-container {
+        margin-top: 32px;
+        padding-right: 17px;
+    }
+
+    .service {
+        margin-bottom: 54px;
+        width: 299px;
     }
 
     .portfolio {
@@ -918,6 +927,21 @@ nav {
         margin-top: 76px;
     }
 
+    .services {
+        padding: 26px 45px 0px 32px;
+        padding-top: 26px;
+        padding-right: 45px;
+    }
+
+    #services-container {
+        margin-top: 26px;
+        padding-right: 0px;
+    }
+
+    .service {
+        margin-bottom: 30px;
+    }
+
     .portfolio {
         height: 844px;
         padding: 42px 30px 6px;
@@ -956,13 +980,11 @@ nav {
 
         margin-left: 0;
         margin-top: 34px;
-
     }
 
     .quote {
         height: 917px;
         padding: 44px 30px 6px;
-
     }
   
     .quote-container {
@@ -995,7 +1017,6 @@ nav {
 
     .quote--icons {
         left: calc((100% - 150px)/2);
-
     }
     
     #right-screen {
