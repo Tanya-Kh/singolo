@@ -777,21 +777,20 @@ nav {
         height: 1095px;
     }
 
+    .buttons-container {
+        margin-top: 39px;
+    }
+
     .images-container {
-        height: 84%;
+        height: 79%;
         overflow: hidden;
+        margin-top: 17px;
     }
 
     .portfolio-image {
         width: 30.5%;
         height: auto;
     }
-
-    .quote {
-        padding: 53px 37px 6px 39px;
-        height: 630px;
-    }
-
     .about-container {
         width: 100%;
         overflow: hidden;
@@ -829,8 +828,17 @@ nav {
         margin-left: 14px;
     }
 
+    .quote {
+        padding: 53px 37px 6px;
+        height: 630px;
+    }
+
+    .quote-container {
+        margin-top: 25px;
+    }
+
     .form {
-        width: 88%;
+        width: 86%;
     }
 
     .form-input {
@@ -841,8 +849,21 @@ nav {
         height: 159px;
     }
 
+    .contacts {
+        margin-top: 12px;
+    }
+
     .contact-info {
         margin-left: 30px;
+    }
+
+    .contact-info-description {
+        margin-top: 4px;
+    }
+
+    .footer {
+        padding-left: 36px;
+        padding-right: 38px;
     }
 }
 
@@ -892,11 +913,15 @@ nav {
     .portfolio {
         height: 844px;
         padding: 42px 30px 6px;
+    }
 
+    .buttons-container {
+        margin-top: 14px;
     }
 
     .images-container {
         height: 72%;
+        margin-top: 16px;
     }
 
     .portfolio-image {
@@ -927,7 +952,7 @@ nav {
     }
 
     .quote {
-        height: 940px;
+        height: 917px;
         padding: 44px 30px 6px;
 
     }
@@ -947,8 +972,13 @@ nav {
         margin-top: 32px;
     }
 
+    .contact-info-description {
+        margin-top: 5px;
+    }
+
     .contacts {
-        /*margin-top: 5px;*/
+        margin-top: 12px;
+        line-height: 24px;
     }
 
     .footer-copyright {
@@ -956,7 +986,7 @@ nav {
     }
 
     .quote--icons {
-        left: calc((100% - 160px)/2);
+        left: calc((100% - 150px)/2);
 
     }
     
