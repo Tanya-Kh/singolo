@@ -38,8 +38,7 @@ html {
 }
 
 .wrapper {
-    /*max-width: 1020px;*/
-    width: 100%;
+    max-width: 1020px;
     margin: auto;
 }
 
@@ -741,11 +740,7 @@ nav {
 }
 
 @media (max-width: 1020px) {
-    .header,
-    .wrapper {
-        width: 100%;
-    }
-
+    
     .slider {
         height: 452px;
     }
@@ -797,6 +792,30 @@ nav {
         height: 630px;
     }
 
+    .about-container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .about-person {
+        width: 31.5%;
+    }
+
+    .photo {
+        width: 100%;
+        height: auto;
+    }
+
+    .about {
+        /*height: 670px;*/
+        height: auto;
+        padding-bottom: 70px;
+    }
+
+    .about-person + .about-person {
+        margin-left: 14px;
+    }
+
     .form {
         width: 88%;
     }
@@ -812,11 +831,15 @@ nav {
     .contact-info {
         margin-left: 30px;
     }
-
 }
 
 
 @media (max-width: 767px) {
+    .header,
+    .wrapper {
+        width: 100%;
+    }
+
     .form-button {
         width: 100%;
     }
@@ -866,6 +889,28 @@ nav {
     .portfolio-image {
         width: 45%;
         margin: 7px;
+    }
+
+    .about {
+        height: auto;
+        padding: 33px 30px 45px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        margin-top: 28px;
+    }
+
+    .about-person {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .about-person + .about-person {
+
+        margin-left: 0;
+        margin-top: 34px;
+
     }
 
     .quote {
