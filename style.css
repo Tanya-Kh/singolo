@@ -795,10 +795,23 @@ nav {
     .about-container {
         width: 100%;
         overflow: hidden;
+        margin-top: 38px;
     }
 
     .about-person {
-        width: 31.5%;
+        width: 31.7%;
+    }
+
+    .about-person-name {
+        margin-top: 9px;
+    }
+
+    .about-person-description {
+        margin-top: 2px;
+    }
+
+    .social-icons {
+        margin-top: 13px;
     }
 
     .photo {
@@ -807,8 +820,8 @@ nav {
     }
 
     .about {
-        /*height: 670px;*/
         height: auto;
+        padding-top: 52px;
         padding-bottom: 70px;
     }
 
