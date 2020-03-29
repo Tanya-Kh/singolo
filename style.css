@@ -38,7 +38,8 @@ html {
 }
 
 .wrapper {
-    width: 1020px;
+    /*max-width: 1020px;*/
+    width: 100%;
     margin: auto;
 }
 
@@ -738,3 +739,171 @@ nav {
         left: 0;
     }
 }
+
+@media (max-width: 1020px) {
+    .header,
+    .wrapper {
+        width: 100%;
+    }
+
+    .slider {
+        height: 452px;
+    }
+
+    .phone-horizontal,
+    .phone-vertical {
+        width: 57%;
+    }
+
+    .phone-vertical {
+        left: 11%;
+        bottom: 6%;
+    }
+
+    .phone-horizontal {
+        right: 8%;
+        top: 12%;
+    }
+
+    .arrow-left {
+        left: 3.7%;
+    }
+
+    .arrow-right {
+        right: 3.7%;
+    }
+
+    #second-slide-image {
+        width: 768px;
+        height: 452px;
+    }
+
+    .portfolio {
+        height: 1095px;
+    }
+
+    .images-container {
+        height: 84%;
+        overflow: hidden;
+    }
+
+    .portfolio-image {
+        width: 30.5%;
+        height: auto;
+    }
+
+    .quote {
+        padding: 53px 37px 6px 39px;
+        height: 630px;
+    }
+
+    .form {
+        width: 88%;
+    }
+
+    .form-input {
+        margin-bottom: 12px;
+    }
+
+    .form-textarea {
+        height: 159px;
+    }
+
+    .contact-info {
+        margin-left: 30px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    .form-button {
+        width: 100%;
+    }
+ 
+
+    
+}
+
+@media (max-width: 376px) {  
+    .slider {
+        height: 218px;
+    }
+
+    #second-slide-image {
+        width: 375px;
+        height: 223px;
+    }
+
+    .header {
+        height: 76px;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    .logo {
+        position: absolute;
+        left: calc((100% - 87px)/2);
+        font-size: 19px;
+    }
+
+    main {
+        margin-top: 76px;
+    }
+
+    .portfolio {
+        height: 844px;
+        padding: 42px 30px 6px;
+
+    }
+
+    .images-container {
+        height: 72%;
+    }
+
+    .portfolio-image {
+        width: 45%;
+        margin: 7px;
+    }
+
+    .quote {
+        height: 940px;
+        padding: 44px 30px 6px;
+
+    }
+  
+    .quote-container {
+       flex-direction: column;
+       margin-top: 19px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .contact-info {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 32px;
+    }
+
+    .contacts {
+        /*margin-top: 5px;*/
+    }
+
+    .footer-copyright {
+        display: none;
+    }
+
+    .quote--icons {
+        left: calc((100% - 160px)/2);
+
+    }
+    
+    #right-screen {
+        display: none;
+    }
+}
+
